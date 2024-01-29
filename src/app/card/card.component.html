@@ -1,0 +1,88 @@
+
+<aside class=" z-0 position-relative">
+
+  <div class="half1 p-2 ">
+
+   <div  class="mt-1 ms-2">
+    <a class="trash" href="">
+    <span class="pi pi-trash     "></span>
+
+    </a>
+
+   </div>
+   <div class="item1 d-flex flex-column  ">
+    <div class="ms-5 fw-bold">عرض التذكرة الخاصة بالفيلم</div>
+    <div class="p-input-icon-left mt-3">
+      <button class="ms-2 z-1 btn2 position-absolute" (click)="show()">
+              <i class="pi pi-copy   " ></i>
+
+      </button>
+
+
+      <input type="text" pInputText [(ngModel)]="ticketvalue" id="inputField" class="w-75 h-75 z-0" />
+    </div>
+    <div class="ms-5 mb-2">
+      فعال حتى 15 يوليو 2024
+    </div>
+
+   </div>
+
+
+  </div>
+
+  <div class="half2 container-fluid   ">
+    <div class="  mt-4 d-flex justify-content-between  p-2 ">
+
+   <div class=" ms-3 mb-2">
+    <qrcode
+    [qrdata]="'https://github.com/Cordobo/angularx-qrcode'"
+    [allowEmptyString]="true"
+    [ariaLabel]="'QR Code image with the following content...'"
+    [cssClass]="'center'"
+    [colorDark]="'#000000ff'"
+    [colorLight]="'#ffffffff'"
+    [elementType]="'canvas'"
+    [errorCorrectionLevel]="'M'"
+    [imageSrc]="'./assets/angular-logo.png'"
+    [imageHeight]="75"
+    [imageWidth]="75"
+    [margin]="4"
+    [scale]="1"
+    [title]="'A custom title attribute'"
+    [width]="100"
+  ></qrcode>
+    </div>
+   <div class=" mt-3">
+    <div class="d-flex justify-content-end me-3 mt-3 ">
+      خصم
+    </div>
+    <div class="d-flex">
+
+      <button  type="button" class="btn1 btn me-3">
+
+        <i class="pi pi-send " ></i>
+        مشاركة
+
+      </button>
+
+
+    <div class="me-3 mt-2">
+      25%
+    </div>
+
+    </div>
+   </div>
+
+
+  </div>
+
+
+
+
+  </div>
+
+
+
+
+</aside>
+<p-toast></p-toast>

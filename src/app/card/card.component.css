@@ -1,0 +1,85 @@
+aside{
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+
+}
+/* ---------- first half card ----------------- */
+.half1{
+  border: 1px;
+  background-color: #8A74F9;
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: auto auto auto   ;
+  border: 5px dotted  #8A74F9;
+  border-radius: 15px 15px 0px 0px;
+  border-bottom: 2.5px dashed ;
+
+
+
+}
+
+.item1{
+  grid-column: 2/5;
+}
+.half1::before{
+  content: " ";
+  border: #F3F5F7 solid 12px;
+  border-radius: 50%;
+ position: absolute;
+  top: 126px;
+  left:-11px;
+
+}
+.half1::after{
+  content: " ";
+  border: #F3F5F7 solid 12px;
+  border-radius: 50%;
+ position: absolute;
+ top: 126px;
+ right:-11px ;
+
+}
+
+
+
+/* --------------------second half card -------------------- */
+.half2{
+  border: 1px;
+  background-color: #8A74F9;
+  border-radius: 0px 0px 15px 15px;
+}
+
+/* ------------------- button--------------------- */
+
+
+.btn1{
+  color: #fefefe;
+  background-color: #8A74F9;
+  border: 1px solid white;
+
+}
+.btn1:hover{
+  color: #8A74F9;
+  background-color: #f0f0f0;
+  border: 1px solid white;
+}
+
+.btn2{
+  color: #8A74F9;
+  background-color: #ffffff;
+  border: #ffffff;
+  border-width: 0px;
+margin-top: 5px;}
+.btn2:hover{
+  background-color: #ffffff;
+
+  border: #ffffff;
+  border-width:0px;
+}
+
+.trash
+{
+  color:    #ffffff;
+  ;
+}

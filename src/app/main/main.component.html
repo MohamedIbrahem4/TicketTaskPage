@@ -1,0 +1,81 @@
+
+
+
+<div class="container-fluid ">
+  <div class="row">
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between p-3">
+
+      <button type="button" class="btn btn4 shadow-sm  rounded">
+        تعديل
+        <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+
+
+
+      <div class="fw-bold">
+        تذكرة رقم #2342
+      </div>
+
+    </div>
+
+    <!-- ------------------------------------ -->
+    <aside class="col-12 col-sm-12 col-md-4 col-lg-4 p-3 ">
+    <app-card></app-card>
+    </aside>
+    <section class="col-12 col-sm-12 col-md-8 col-lg-8 p-3">
+        <app-chart></app-chart>
+
+    </section>
+    <!-- ------half page bar-------- -->
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between p-3">
+      <div class="d-flex align-items-center  ">
+        <button type="button" class="btn  btn-sm btn1 shadow-sm  rounded">حجز تذكرة جديدة</button>
+        <div class="ms-3  d-flex align-items-center  ">
+          <span class="" [style]="color" >
+           مفعلة
+          </span>
+          <span class="ms-3 check">
+                      <p-inputSwitch (click)="changecolor()"  formControlName="checked" > </p-inputSwitch >
+
+          </span>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="d-flex gap-3">
+        <div class="d-none d-sm-none d-md-block d-lg-block">
+          <button type="button" class="btn btn2 shadow-sm  rounded"><i class="pi pi-sort-alt" style="font-size: 1rem"></i>
+
+          </button>
+
+        </div>
+        <div class="d-none d-sm-none d-md-block d-lg-block">
+          <button type="button" class="btn btn3 shadow-sm  rounded"><i class="pi  pi-sliders-h   " style="font-size: 1rem"></i></button>
+
+        </div>
+        <span class="d-none d-sm-none d-md-block d-lg-block p-input-icon-right ">
+          <i class="pi pi-search"></i>
+          <input type="text" class="h-100" pInputText pTooltip="بحث" placeholder="...بحث">
+      </span>
+      <!-- <div class=" flex justify-content-center">
+        <p-menu #menu [model]="items" [popup]="true"></p-menu>
+        <button pButton type="button" (click)="menu.toggle($event)" icon="pi pi-bars" label="Show"></button>
+    </div> -->
+      <div class="mt-1">
+          مبيعات التذاكر
+        </div>
+      </div>
+
+    </div>
+    <!-- ----------------------------------------- -->
+    <section class="col-12 col-sm-12 col-md-12 col-lg-12 shadow-lg  mb-5  bg-body-tertiary rounded">
+   <app-table></app-table>
+    </section>
+
+  </div>
+
+</div>
